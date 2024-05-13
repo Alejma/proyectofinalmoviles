@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        <link rel="stylesheet" href="css/index.css">
+
+        <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+        <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+        <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+
+        <title>todoApp</title>
+    </head>
+    <body>
+
+        <ons-splitter>
+            <ons-splitter-side id="menu" side="left" width="220px" collapse swipeable>
+              <ons-page>
+                <ons-list>
+                  <ons-list-item onclick="fn.load('home.html')" tappable>
+                    Home
+                  </ons-list-item>
+                  <ons-list-item onclick="fn.load('settings.html')" tappable>
+                    Settings
+                  </ons-list-item>
+                  <ons-list-item onclick="fn.load('about.html')" tappable>
+                    About
+                  </ons-list-item>
+                </ons-list>
+              </ons-page>
+            </ons-splitter-side>
+            <ons-splitter-content id="content" page="home.html"></ons-splitter-content>
+        </ons-splitter>
+
+        <div class="tool-bar">
+            <ons-toolbar>
+                <div class="left">
+                  <ons-toolbar-button onclick="fn.open()">
+                    <ons-icon icon="md-menu"></ons-icon>
+                  </ons-toolbar-button>
+                </div>
+                <div class="center">
+                  Home
+                </div>
+              </ons-toolbar>
+        </div>
+
+        <div class="container">
+
+            <div class="perfil">
+                <div id="fecha"></div>
+                <h1>¡Bienvenido!</h1>
+                <span>Vamos a cumplir tus tareas.</span>
+            </div>
+
+            <div class="agregar-tarea">
+                <input type="text" id="input" placeholder="Agregar una tarea...">
+                <i id="boton-enter" class="fas fa-plus-circle"></i>
+            </div>
+
+            <div class="seccion-tarea">
+                <ons-list id="lista">
+                    <ons-list-header>Tareas pendientes:</ons-list-header>
+                    <ons-list-item>
+                            <div>
+                                <i class="far fa-circle co"></i>
+                                <p class="text">Item A</p>
+                                <i class="fas fa-trash de"></i>
+                            </div>
+                    </ons-list-item>
+                </ons-list>
+            </div>
+
+        </div>
+
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
