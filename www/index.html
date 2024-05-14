@@ -13,8 +13,8 @@
 
         <link rel="stylesheet" href="css/index.css">
 
-        <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
-        <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+        <link rel="stylesheet" href="./css/onsenui-core.min.css">
+        <link rel="stylesheet" href="./css/onsen-css-components.min.css">
         <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
 
         <title>todoApp</title>
@@ -63,7 +63,7 @@
 
             <div class="agregar-tarea">
                 <input type="text" id="input" placeholder="Agregar una tarea...">
-                <i id="boton-enter" class="fas fa-plus-circle"></i>
+                    <i id="boton-enter" class="fas fa-plus-circle"></i>
             </div>
 
             <div class="seccion-tarea">
@@ -72,7 +72,7 @@
                     <ons-list-item>
                             <div>
                                 <i class="far fa-circle co"></i>
-                                <p class="text">Item A</p>
+                                <div class="center"><p class="text">Item A</p></div>
                                 <i class="fas fa-trash de"></i>
                             </div>
                     </ons-list-item>
@@ -80,8 +80,13 @@
             </div>
 
         </div>
+        <ons-button onclick="redirigir()">Ir a otra página</ons-button>
+
+
 
         <script src="cordova.js"></script>
+        <script src="js/login.js"></script>
+
         <script src="js/index.js"></script>
     </body>
 </html>

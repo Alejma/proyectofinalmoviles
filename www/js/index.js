@@ -21,3 +21,7 @@ window.fn.load = function(page) {
   content.load(page)
     .then(menu.close.bind(menu));
 };
+
+function addTask(){
+window.location.href = 'addTarea.html';
+}
