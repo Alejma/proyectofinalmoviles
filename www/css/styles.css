@@ -1,0 +1,25 @@
+:root {
+    --white: #fafafb;
+    --purple:#9a67ea;
+    --blue-light:#04d4c3;
+    --purple-light: #f2eafd;
+    --purple-past: #7930c0;
+    --purple-dark: #672c9d;
+}
+
+
+/* ESTILO ONS-TABBAR */
+
+.tabbar__label{
+    text-transform: capitalize;
+}
+
+/* HOME-TAREAS*/
+
+
+
+/*#home .encabezado h1{
+}
+
+#home .encabezado span{
+}*/

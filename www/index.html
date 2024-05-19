@@ -11,17 +11,78 @@
         <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-        <link rel="stylesheet" href="css/index.css">
+        <!--<link rel="stylesheet" href="css/index.css">-->
 
-        <link rel="stylesheet" href="./css/onsenui-core.min.css">
-        <link rel="stylesheet" href="./css/onsen-css-components.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!--<link rel="stylesheet" href="./css/onsenui-core.min.css">
+        <link rel="stylesheet" href="./css/onsen-css-components.min.css">-->
+
+        <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+        <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+
         <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
 
         <title>todoApp</title>
     </head>
+
     <body>
 
-        <ons-splitter>
+      <ons-page>
+      <!--
+        <ons-toolbar>
+          <div class="center">Tab 1</div>
+        </ons-toolbar>
+      -->
+
+        <ons-tabbar swipeable position="bottom">
+          <ons-tab page="home.html">
+            <input type="radio" style="display: none">
+            <button class="tabbar__button">
+              <div class="tabbar__icon">
+                <ons-icon icon="md-home"></ons-icon>
+              </div>
+              <div class="tabbar__label">Tareas</div>
+            </button>
+          </ons-tab>
+
+          <ons-tab page="temas.html">
+            <input type="radio" style="display: none">
+            <button class="tabbar__button">
+              <div class="tabbar__icon">
+                <ons-icon icon="ion-ios-color-palette"></ons-icon>
+              </div>
+              <div class="tabbar__label">Temas</div>
+            </button>
+          </ons-tab>
+
+          <ons-tab page="perfil.html">
+            <input type="radio" style="display: none">
+            <button class="tabbar__button">
+              <div class="tabbar__icon">
+                <ons-icon icon="ion-ios-person"></ons-icon>
+              </div>
+              <div class="tabbar__label">Perfil</div>
+            </button>
+          </ons-tab>
+        </ons-tabbar>
+      </ons-page>
+
+        <script src="cordova.js"></script>
+        <script src="js/login.js"></script>
+
+        <script src="js/index.js"></script>
+
+    </body>
+
+</html>
+
+
+
+
+
+<!--
+  <ons-splitter>
             <ons-splitter-side id="menu" side="left" width="220px" collapse swipeable>
               <ons-page>
                 <ons-list>
@@ -81,12 +142,4 @@
 
         </div>
         <ons-button onclick="redirigir()">Ir a otra página</ons-button>
-
-
-
-        <script src="cordova.js"></script>
-        <script src="js/login.js"></script>
-
-        <script src="js/index.js"></script>
-    </body>
-</html>
+-->
