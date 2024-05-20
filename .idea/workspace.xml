@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08545f9e-0ef4-44fe-bec5-f7cb5bfe7314" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/perfil.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/perfil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/temas.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/temas.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,19 +31,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "team-a",
-    "last_opened_file_path": "C:/Users/Alejandro-PC/Documents/proyectofinalmoviles/www/css",
-    "settings.editor.selected.configurable": "emulator"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;team-a&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alejandro-PC/Documents/proyectofinalmoviles/www/css&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;emulator&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Alejandro-PC\Documents\proyectofinalmoviles\www\css" />
