@@ -25,3 +25,7 @@ window.fn.load = function(page) {
 function addTask(){
 window.location.href = 'addTarea.html';
 }
+
+function registro() {
+window.location.href = 'registro.html';
+}
