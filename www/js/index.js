@@ -29,3 +29,7 @@ window.location.href = 'addTarea.html';
 function registro() {
 window.location.href = 'registro.html';
 }
+
+function redirigir() {
+window.location.href = 'login.html';
+}
