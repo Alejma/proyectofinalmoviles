@@ -17,6 +17,10 @@ body{
     background-color: transparent;
 }
 
+.custom1{
+    background-color: var(--crema);
+}
+
 /* ---------------> INDEX.HTML <--------------- */
 /* ESTILO ONS-TABBAR */
 

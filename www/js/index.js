@@ -25,3 +25,35 @@ window.fn.load = function(page) {
 function addTask(){
 window.location.href = 'addTarea.html';
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('init', function(event) {
+  var page = event.target;
+
+  if (page.id === 'home') {
+    // Obtener referencia al ons-fab
+    var fabButton = document.getElementById('fab-button');
+
+    // Agregar evento de clic al ons-fab
+    fabButton.addEventListener('click', function() {
+      // Navegar a la página add-tarea.html
+      myNavigator.pushPage('add-tarea.html').then(function(){
+        myNavigator.removePage(page);
+      });
+    });
+  }
+});
