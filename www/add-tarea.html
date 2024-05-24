@@ -1,0 +1,43 @@
+<ons-page id="newTaskPage">
+    <ons-toolbar>
+        <div class="left"><ons-back-button>Todos</ons-back-button></div>
+        <div class="center">Nueva Tarea</div>
+        <div class="right">
+            <ons-if platform="android">
+                <ons-toolbar-button component="button/save-task">
+                    <ons-icon icon="md-save"></ons-icon>
+                </ons-toolbar-button>
+            </ons-if>
+        </div>
+    </ons-toolbar>
+
+    <ons-list-title>Agregar una nueva tarea</ons-list-title>
+    <ons-list>
+        <ons-list-item modifier="nodivider">
+            <div class="center">
+                <ons-input id="title-input" type="text" placeholder="Quiero..." float></ons-input>
+            </div>
+        </ons-list-item>
+        <ons-list-item modifier="nodivider">
+            <div class="center">
+                <ons-input id="category-input" type="text" placeholder="Fecha..." float></ons-input>
+            </div>
+        </ons-list-item>
+        <ons-list-item modifier="nodivider">
+            <div class="center">
+                <ons-input id="description-input" type="text" placeholder="Recordatorio..." float></ons-input>
+            </div>
+        </ons-list-item>
+    </ons-list>
+
+    <ons-list-title>Otras opciones</ons-list-title>
+    <ons-list>
+        <ons-list-item modifier="nodivider">
+            <label class="center" for="inner-highlight-input">
+                Geolocalización?
+            </label>
+            <div class="right">
+                <ons-switch id="highlight-input" input-id="inner-highlight-input"></ons-switch>
+            </div>
+        </ons-list-item>
+    </ons-list>
