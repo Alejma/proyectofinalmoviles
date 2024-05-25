@@ -51,9 +51,7 @@ document.addEventListener('init', function(event) {
     // Agregar evento de clic al ons-fab
     fabButton.addEventListener('click', function() {
       // Navegar a la página add-tarea.html
-      myNavigator.pushPage('add-tarea.html').then(function(){
-        myNavigator.removePage(page);
-      });
+      myNavigator.pushPage('add-tarea.html');
     });
   }
 });
