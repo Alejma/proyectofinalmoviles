@@ -7,6 +7,7 @@
     --purple-dark: #672c9d;
     --crema: #fffdee;
     --lavanda: #c3b1e1;
+    --b1: #fffdf4;
 }
 
 body{
@@ -80,4 +81,22 @@ ons-tab{
 #home ons-fab{
     background: var(--lavanda);
     color: var(--crema);
+}
+
+/* ---------------> ADD-TAREA.HTML <--------------- */
+/* ESTILO ONS-TOOLBAR */
+#add-tarea ons-toolbar{
+    background: var(--lavanda);
+}
+
+#add-tarea .custom-back-button ons-back-button{
+    color: var(--crema);
+}
+
+#add-tarea ons-icon{
+    color: var(--crema);
+}
+
+#add-tarea ons-list-item{
+    background: var(--b1);
 }
