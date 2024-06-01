@@ -1,6 +1,7 @@
 function FuncionRegistrar() {
     var RegistroCorreo = document.getElementById('Correo').value;
     var RegistroTel = document.getElementById('NumTele').value;
+    var RegistroNombre = document.getElementById('NombreCompleto').value;
     var RegistroUsuario = document.getElementById('NombreUsuario').value;
     var RegistroContra = document.getElementById('Contra').value;
     var RegistroVerifContra = document.getElementById('VerifContra').value;
@@ -16,8 +17,8 @@ function FuncionRegistrar() {
     }
 
     window.db.transaction(function(tx) {
-        tx.executeSql('INSERT INTO usuarios (correo, telefono, nombre_usuario, contrasena) VALUES (?, ?, ?, ?)',
-            [RegistroCorreo, RegistroTel, RegistroUsuario, RegistroContra],
+        tx.executeSql('INSERT INTO usuarios (correo, telefono, nombre_completo, nombre_usuario, contrasena) VALUES (?, ?, ?, ?, ?)',
+            [RegistroCorreo, RegistroTel, RegistroNombre, RegistroUsuario, RegistroContra],
             function(tx, res) {
                 ons.notification.alert('Registro exitoso!');
                 window.location.href = 'login.html';
@@ -27,6 +28,7 @@ function FuncionRegistrar() {
             }
         );
     });
+
 }
 
 function CancelarRegistro() {
