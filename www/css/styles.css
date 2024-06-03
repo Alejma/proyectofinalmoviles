@@ -100,3 +100,44 @@ ons-tab{
 #add-tarea ons-list-item{
     background: var(--b1);
 }
+
+/* ---------------> DETALLES-TAREA.HTML <--------------- */
+/* ESTILO ONS-TOOLBAR */
+#detalles-tarea ons-toolbar{
+    background: var(--lavanda);
+}
+
+#detalles-tarea .custom-back-button ons-back-button{
+    color: var(--crema);
+}
+
+#detalles-tarea ons-icon{
+    color: var(--crema);
+}
+
+#detalles-tarea ons-list-item{
+    background: var(--b1);
+}
+
+#detalles-tarea .seccion-notas ons-list-item{
+    background: var(--lavanda);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 95%;
+    color: var(--crema);
+    margin-bottom: 10px;
+}
+
+#detalles-tarea .seccion-notas ons-list{
+    background-color: transparent;
+}
+
+#detalles-tarea .seccion-notas ons-icon{
+    color: var(--crema);
+    font-size: 30px;
+}
+
+#detalles-tarea .seccion-notas ons-button{
+    background: var(--lavanda);
+}
