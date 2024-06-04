@@ -11,11 +11,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-        <!--<link rel="stylesheet" href="css/index.css">-->
-
-        <!--<link rel="stylesheet" href="./css/onsenui-core.min.css">
-        <link rel="stylesheet" href="./css/onsen-css-components.min.css">-->
-
         <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
         <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
 
@@ -27,8 +22,16 @@
     </head>
 
     <body>
-        <ons-navigator id="myNavigator">
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (!localStorage.getItem('userLoggedIn')) {
+                window.location.href = 'login.html';
+            }
+        });
+    </script>
+
+        <ons-navigator id="myNavigator">
             <ons-page>
                 <ons-tabbar swipeable position="bottom">
                     <ons-tab page="home.html">
@@ -64,7 +67,6 @@
                 <div class="background custom"></div>
             </ons-page>
         </ons-navigator>
-
 
         <script src="cordova.js"></script>
         <script src="js/login.js"></script>

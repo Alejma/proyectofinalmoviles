@@ -6,8 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="08545f9e-0ef4-44fe-bec5-f7cb5bfe7314" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/detalles-tarea.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/detalles-tarea.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/perfil.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/perfil.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +26,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -38,12 +48,15 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;team-a&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Alejandro-PC/Documents/proyectofinalmoviles/www/css&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;emulator&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Alejandro-PC\Documents\proyectofinalmoviles\www\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zunig\apps\todoApp\platforms\android\app" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

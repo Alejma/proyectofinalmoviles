@@ -4,6 +4,7 @@ var db;
 
 function onDeviceReady() {
     console.log('Cordova is now initialized.');
+
     db = window.sqlitePlugin.openDatabase({name: 'todo.db', location: 'default'});
 
     db.transaction(function(tx) {
@@ -17,6 +18,14 @@ function onDeviceReady() {
             console.log('Notes table created successfully');
         }, function(tx, error) {
             console.log('CREATE TABLE error: ' + error.message);
+        });
+
+        db.transaction(function(tx) {
+            tx.executeSql('CREATE TABLE IF NOT EXISTS usuarios (id INTEGER PRIMARY KEY AUTOINCREMENT, correo TEXT, telefono TEXT, nombre_completo TEXT, nombre_usuario TEXT, contrasena TEXT)');
+        }, function(error) {
+            console.log('Transaction ERROR: ' + error.message);
+        }, function() {
+            console.log('Database and table created successfully');
         });
     });
 
@@ -72,11 +81,16 @@ document.addEventListener('init', function(event) {
     var page = event.target;
 
     if (page.id === 'home') {
+        // Verifica si el usuario está autenticado
+        if (!localStorage.getItem('userLoggedIn')) {
+            document.querySelector('#myNavigator').replacePage('login.html');
+            return;
+        }
+
         var fabButton = document.getElementById('fab-button');
         fabButton.addEventListener('click', function() {
             document.querySelector('#myNavigator').pushPage('add-tarea.html');
         });
-
     } else if (page.id === 'add-tarea') {
         var saveButton = page.querySelector('ons-toolbar-button[component="button/save-task"]');
         saveButton.addEventListener('click', function() {
@@ -146,6 +160,27 @@ document.addEventListener('init', function(event) {
             if (noteInput) {
                 addNote(taskId, noteInput);
                 document.querySelector('#note-input').value = ''; // Clear input after adding note
+            }
+        });
+    } else if (page.id === 'perfil') {
+        var logoutButton = page.querySelector('#logoutButton');
+        logoutButton.addEventListener('click', function() {
+            logout();
+        });
+    } else if (page.id === 'login') {
+        // Lógica para el login
+        var loginButton = page.querySelector('#loginButton');
+        loginButton.addEventListener('click', function() {
+            var usernameInput = document.querySelector('#username');
+            var passwordInput = document.querySelector('#password');
+
+            if (usernameInput.value && passwordInput.value) {
+                // Aquí puedes agregar tu lógica de autenticación
+                // Por simplicidad, asumamos que el login es exitoso si ambos campos están llenos
+                localStorage.setItem('userLoggedIn', true);
+                document.querySelector('#myNavigator').replacePage('home.html');
+            } else {
+                ons.notification.alert('Por favor ingrese nombre de usuario y contraseña.');
             }
         });
     }
@@ -235,4 +270,10 @@ function deleteNote(id, item) {
             console.log('DELETE error: ' + error.message);
         });
     });
+}
+
+// Función de cierre de sesión
+function logout() {
+    localStorage.removeItem('userLoggedIn');
+    window.location.href = 'login.html';
 }
