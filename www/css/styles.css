@@ -1,0 +1,143 @@
+:root {
+    --white: #fafafb;
+    --purple:#9a67ea;
+    --blue-light:#04d4c3;
+    --purple-light: #f2eafd;
+    --purple-past: #7930c0;
+    --purple-dark: #672c9d;
+    --crema: #fffdee;
+    --lavanda: #c3b1e1;
+    --b1: #fffdf4;
+}
+
+body{
+    background-color: var(--crema);
+}
+
+.custom{
+    background-color: transparent;
+}
+
+.custom1{
+    background-color: var(--crema);
+}
+
+/* ---------------> INDEX.HTML <--------------- */
+/* ESTILO ONS-TABBAR */
+
+ons-tab{
+    background-color: var(--lavanda);
+}
+
+.tabbar__label{
+    text-transform: capitalize;
+    color: var(--crema);
+}
+
+.tabbar__icon ons-icon{
+    color: var(--crema);
+}
+
+/* ---------------> HOME.HTML <--------------- */
+/* HOME-TAREAS*/
+
+#home .encabezado h1{
+    font-family: 'Prompt',sans-serif;
+    color: var(--lavanda);
+}
+
+#home .encabezado span{
+    font-family: 'Prompt',sans-serif;
+    color: var(--lavanda);
+    letter-spacing: 1px;
+}
+
+#home .seccion-tarea ons-list{
+    background-color: transparent;
+}
+
+#home .seccion-tarea ons-list-header{
+    color: var(--lavanda);
+    margin-bottom: 20px;
+    background-color: transparent;
+    font-family: 'Prompt',sans-serif;
+}
+
+#home .seccion-tarea ons-list-item{
+    background: var(--lavanda);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 95%;
+    color: var(--crema);
+    margin-bottom: 10px;
+}
+
+#home .seccion-tarea ons-icon{
+    color: var(--crema);
+    font-size: 30px;
+}
+
+#home ons-fab{
+    background: var(--lavanda);
+    color: var(--crema);
+}
+
+/* ---------------> ADD-TAREA.HTML <--------------- */
+/* ESTILO ONS-TOOLBAR */
+#add-tarea ons-toolbar{
+    background: var(--lavanda);
+}
+
+#add-tarea .custom-back-button ons-back-button{
+    color: var(--crema);
+}
+
+#add-tarea ons-icon{
+    color: var(--crema);
+}
+
+#add-tarea ons-list-item{
+    background: var(--b1);
+}
+
+/* ---------------> DETALLES-TAREA.HTML <--------------- */
+/* ESTILO ONS-TOOLBAR */
+#detalles-tarea ons-toolbar{
+    background: var(--lavanda);
+}
+
+#detalles-tarea .custom-back-button ons-back-button{
+    color: var(--crema);
+}
+
+#detalles-tarea ons-icon{
+    color: var(--crema);
+}
+
+#detalles-tarea ons-list-item{
+    background: var(--b1);
+}
+
+#detalles-tarea .seccion-notas ons-list-item{
+    background: var(--lavanda);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 95%;
+    color: var(--crema);
+    margin-bottom: 10px;
+}
+
+#detalles-tarea .seccion-notas ons-list{
+    background-color: transparent;
+}
+
+#detalles-tarea .seccion-notas ons-icon{
+    color: var(--crema);
+    font-size: 30px;
+}
+
+#detalles-tarea .seccion-notas ons-button{
+    background: var(--lavanda);
+}

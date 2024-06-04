@@ -1,0 +1,40 @@
+<ons-page id="add-tarea">
+    <div class="background custom1"></div>
+    <ons-toolbar>
+        <div class="left"><ons-back-button class="custom-back-button">Back</ons-back-button></div>
+        <div class="center">Nueva Tarea</div>
+        <div class="right">
+            <ons-toolbar-button component="button/save-task">
+                <ons-icon icon="md-save"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+    </ons-toolbar>
+
+    <ons-list-title>Agregar una nueva tarea</ons-list-title>
+    <ons-list>
+        <ons-list-item modifier="nodivider">
+            <div class="center">
+                <ons-input id="title-input" type="text" placeholder="Quiero..." float></ons-input>
+            </div>
+        </ons-list-item>
+        <ons-list-item>
+            <div class="center">
+                <ons-input id="taskDate" modifier="underbar" type="date" placeholder="dd/mm/aaaa" float></ons-input>
+            </div>
+        </ons-list-item>
+        <ons-list-item>
+            <div class="center">
+                <ons-input id="taskTime" modifier="underbar" type="time" placeholder="--:--" float></ons-input>
+            </div>
+        </ons-list-item>
+    </ons-list>
+
+    <ons-list-title>Otras opciones</ons-list-title>
+    <ons-list>
+        <ons-list-item modifier="nodivider">
+            <label class="center">
+                Geolocalización
+            </label>
+        </ons-list-item>
+    </ons-list>
+</ons-page>
